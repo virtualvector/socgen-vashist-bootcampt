@@ -1,0 +1,55 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "from postman",
+      "summary": "rest api testing tool"
+    },
+    {
+      "title": "from postman",
+      "summary": "rest api testing tool",
+      "id": 2
+    },
+    {
+      "title": "from postman",
+      "summary": "rest api testing tool",
+      "id": 3
+    },
+    {
+      "title": "Angular",
+      "summary": "framework from google!!",
+      "id": 5
+    },
+    {
+      "title": "React",
+      "summary": "sdg jsdkl gkds",
+      "id": 6
+    },
+    {
+      "title": "Anotherdsg ",
+      "summary": "sdgkj sdg d",
+      "id": 7
+    },
+    {
+      "title": "T",
+      "summary": "TT",
+      "id": 8
+    },
+    {
+      "title": "T1",
+      "summary": "T!!",
+      "id": 9
+    },
+    {
+      "title": "S6",
+      "summary": "S6 summary",
+      "id": 10
+    }
+  ],
+
+  "todos": [
+    {"text": "Go for lunch", "isDone": true},
+    {"text": "buy some gifts", "isDone": false},
+    {"text": "go home on monday!!", "isDone": false}
+]
+}

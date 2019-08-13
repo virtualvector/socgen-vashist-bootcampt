@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Test Title</title>
+</head>
+<body>
+    <h2 id="message"></h2>
+    <button id="load" >Load Content</button>
+    <button class="cc" >Change Content</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+    $('#load').click(()=>{
+       
+        $.ajax('http://localhost:8080/dummy.json')
+        .then(res=> {
+            console.log(res)
+            $('#message').html(res.text)
+        })
+    })
+
+    $('.cc').click(()=>{
+        var str =  $('#message').html()
+       var revStr = str.split('').reverse().join('')
+       $('#message').html(revStr)
+    })
+
+    // 
+
+
+    // function changeContent(){
+
+    // //    var str =  document.getElementById('message').innerHTML
+    //    var str =  $('#message').html()
+    //    var revStr = str.split('').reverse().join('')
+    // //    document.getElementById('message').innerHTML = revStr
+    //    $('#message').html(revStr)
+    // }
+</script>
+</html>

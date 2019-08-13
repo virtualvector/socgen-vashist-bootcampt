@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Test Title</title>
+</head>
+<body>
+    <h2>Some content</h2>
+    <button onclick="changeContent()">Change Content</button>
+</body>
+
+<script>
+
+    function changeContent(){
+       var str =  document.getElementsByTagName('h2')[0].innerHTML
+       var revStr = str.split('').reverse().join('')
+       document.getElementsByTagName('h2')[0].innerHTML = revStr
+    }
+</script>
+</html>

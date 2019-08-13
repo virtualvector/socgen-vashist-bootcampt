@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Clock</title>
+    <link rel="stylesheet" href="mystyle.css"/>
+</head>
+<body>
+    
+    <p id="clock" class="textred"></p>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        
+        setInterval(()=>{
+            var today = new Date();
+            var seconds = today.getSeconds();
+            $('#clock').html(seconds)
+        }, 1000)
+       
+        
+    </script>
+</body>
+</html>

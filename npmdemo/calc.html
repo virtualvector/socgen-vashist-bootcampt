@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Calc</title>
+</head>
+<body>
+    <input id="op1" type="number"/>
+    <input id="op2" type="number"/>
+    <p id="result"></p>
+    <button id="add"> + </button>
+    <button id="mul"> * </button>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $('#add').click(()=>{
+            $('#result').html( parseInt($('#op1').val()) +  parseInt($('#op2').val()))
+        })
+        $('#mul').click(()=>{
+            $('#result').html( parseInt($('#op1').val()) *  parseInt($('#op2').val()))
+        })
+        
+    </script>
+</body>
+</html>
